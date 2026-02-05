@@ -9,6 +9,14 @@ example of a `notable.json` function would be one which performs some operation
 and returns an error code. An example of an `ignore.json` function is a setter
 which returns the set value on returning.
 
+To set up, run in the Linux repo:
+
+```
+$ make LLVM=1 defconfig
+$ make LLVM=1
+$ ./scripts/clang-tools/gen_compile_commands.py
+```
+
 ## Notes
 
 ### `__must_check`
